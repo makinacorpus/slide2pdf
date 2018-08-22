@@ -44,7 +44,7 @@ The syntax of the configuration file has to be as follows :
         "reverse": true,
         "queries": [
             ".slide.future",
-            "#slide.far-future"
+            ".slide.far-future"
         ]
     },  
   "navigate": [

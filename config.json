@@ -1,0 +1,16 @@
+{
+    "colored": true,
+    "navigate": [
+        [".navigate-down.enabled", "ArrowDown"],
+        [".navigate-right.enabled", "ArrowRight"]
+    ],
+    "pictureQuality": 90,
+    "outputPath": "./datest3.pdf",
+    "verbose": true,
+    "overwrite": true,
+    "debug": false,
+    "width": 1020,
+    "height": 760,
+    "animationDelay": 100 ,
+    "url": "https://darekkay.github.io/presentations/accessible-web/index.html#/"
+}

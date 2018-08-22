@@ -1,0 +1,33 @@
+{
+  "name": "slide2PDF",
+  "version": "1.0.0",
+  "description": "Module to convert slides to PDF",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromium": "^1.0.2",
+    "config-json": "^1.0.0",
+    "easyimage": "^3.1.x",
+    "fs-extra": "^6.0.x",
+    "html-parser": "^0.11.0",
+    "mktemp": "^0.4.0",
+    "node": "^10.6.0",
+    "node-html-parser": "^1.1.x",
+    "package.json": "^2.0.1",
+    "path": "^0.12.x",
+    "puppeteer": "^1.5.x",
+    "yargs": "^11.0.x"
+  },
+  "devDependencies": {},
+  "bin": {
+    "toPDF": "./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.etude.eisti.fr:trouilhchl/toPDF.git"
+  }
+}

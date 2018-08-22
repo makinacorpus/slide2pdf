@@ -1,5 +1,5 @@
 {
-  "name": "slide2PDF",
+  "name": "slide2pdf",
   "version": "1.0.0",
   "description": "Module to convert slides to PDF",
   "main": "main.js",
@@ -24,10 +24,10 @@
   },
   "devDependencies": {},
   "bin": {
-    "toPDF": "./main.js"
+    "slide2PDF": "./main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.etude.eisti.fr:trouilhchl/toPDF.git"
+    "url": "https://github.com/chloe-t/slide2PDF"
   }
 }

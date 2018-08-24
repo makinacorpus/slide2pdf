@@ -158,22 +158,6 @@ function getIntParameters(commandLineValue, configFileValue, name) {
     }
 }
 
-//     if (name == "h") {
-//         assert(true, orange, "\nHeight value: Invalid or not found, using default :" + defaultHeight + ".");
-//         return defaultHeight;
-//     } else {
-//         if (name == "w") {
-//             assert(true, orange, "\nWidth value: Invalid or not found, using default : " + defaultWidth + ".");
-//             return defaultWidth;
-//         } else {
-//             assert(true, orange, "\nAnimation delay value: Invalid or not found, using default : " + defaultAnimationDelay + "ms .");
-//             return defaultAnimationDelay;
-//         }
-
-//     }
-// }
-
-
 
 /**
  * Gets the given name to the rendered PDF by checking if it already exists for the given path.
@@ -571,9 +555,3 @@ let end = false;
         }
     }
 })();
-
-//TODO
-// MD5 - Après 5 slides identiques -> erreur : arret de l'execution
-// PageRange - Debut de capture à la nieme slide et fin à la m ieme slide 
-
-// Push sur repo makina + modifier reference repos dans package.json

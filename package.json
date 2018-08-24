@@ -24,11 +24,11 @@
   },
   "devDependencies": {},
   "bin": {
-    "slide2PDF": "./main.js"
+    "slide2pdf": "./main.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chloe-t/slide2PDF"
+    "url": "https://github.com/makinacorpus/slide2pdf"
   },
   "keywords": [
     "landslide",

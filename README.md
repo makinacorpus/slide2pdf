@@ -1,5 +1,5 @@
-# slide2PDF
-slide2PDF is a simple app developped with JavaScript and NodeJS. This app is made to convert your slides to PDF.
+# slide2pdf
+slide2pdf is made to convert WEB presentation slides to PDF by capturing screenshots and converting it to PDF format.
 
 
 ## System requirements
@@ -9,31 +9,31 @@ slide2PDF is a simple app developped with JavaScript and NodeJS. This app is mad
 
 ##  Other requirements 
 
-  - Slides given to slide2PDF can't be in PDF format. 
-  - If slides are locally saved , ensure the URL given to slide2PDF is in a valid format : 
+  - Slides given to slide2pdf can't be in PDF format. 
+  - If slides are locally saved , ensure the URL given to slide2pdf is in a valid format : 
     - example : 
 ```sh
 file:///home/myDir/presentation.html#slide1
 ```
 
 ## Installation
-Once you've installed ImageMagick, install the module slide2PDF : 
+Once you've installed ImageMagick, install the module slide2pdf : 
 ```sh
-$ npm install slide2pdf
+$ npm install -g slide2pdf
 ```
 You can now use it from any workspace. 
 ## Usage 
-There are two way to configure app's options. 
+There are two ways to configure app's options. 
 Running the app with no config.json file will launch ReavealJS / Landslide conversion from given url. For instance : 
 ```
-slide2PDF -u https://darekkay.github.io/presentations/accessible-web/index.html#/ -o test.pdf 
+slide2pdf -u https://darekkay.github.io/presentations/accessible-web/index.html#/ -o test.pdf 
 ```
-Both way need at least one parameter : the url of the targeted slides.
+Both ways need at least one parameter : the url of the targeted slides.
 
 ### __Configuration file__: 
-To use the configuration file method, you have to launch the application in the shell as so : 
+To use the configuration file method, you have to launch the application in the shell as follows : 
 ```sh
-slide2PDF --config <path to the configuration file >
+slide2pdf --config <path to the configuration file>
 ```
 This file has to be a JSON file. 
 The syntax of the configuration file has to be as follows : 
@@ -63,7 +63,7 @@ The syntax of the configuration file has to be as follows :
   "url": "https://darekkay.github.io/presentations/accessible-web/index.html#/"
 }
 ```
-__endCase__ is the option that allows you to choose stopping conditions. Those conditions are selectors that mark the end of the slide by their presence or absence. For instance, the html code of the last slide is characterized by the absence of the class "future"; that's the case that you can see in the example above. If endCase option is missing, default will be stopping conditions for RevealJS and Landslide slides. 
+__endCase__ is the option that allows you to choose stopping conditions. Those conditions are selectors that mark the end of the slide by their presence or absence. For instance, the html code of the last slide is characterized by the absence of the class "future"; that's the case that you can see in the example above. If endCase option is missing, stopping conditions for RevealJS and Landslide slides will be used. 
 + __operator__ : 
   + "and" if you want all queries wrote in queries part to be verified. 
   + "or" if you want at least one of the queries to be verified. 
@@ -115,9 +115,9 @@ __url__ : url of the slide that you want to convert. Required either in configur
 
 A help is provided as so : 
 ```sh
-Usage: slide2PDF --url <your_url> [options]
+Usage: slide2pdf --url <your_url> [options]
  or
- slide2PDF --config <configFile.json> [options]
+ slide2pdf --config <configFile.json> [options]
 
 Options:
   --help                Show help                                      [boolean]
@@ -144,17 +144,7 @@ Command line options will have priority over configuration file. As an example, 
 
 ### Tech
 
-slide2PDF uses a number of open source projects to work properly:
-
-<!-- * [Puppeteer](https://github.com/GoogleChrome/puppeteer) -  Node library which provides a high-level API to control headless Chrome or Chromium over the DevTools Protocol (V1.0.0 or greater) -->
-<!--* [rimraf](https://www.npmjs.com/package/rimraf) - The UNIX command rm -rf for node (V1.0.0 or greater)-->
-<!--* [fs-extra](https://www.npmjs.com/package/fs-extra) - Adds file system methods that aren't included in the native fs module and adds promise support to the fs methods (V0.1.0 or greater)-->
-<!--* [easyimage](https://www.npmjs.com/package/easyimage) - EasyImage is a promise-based image processing module for Node.js, it is built on top of ImageMagick (V1.0.0 or greater)-->
-<!--* [path](https://www.npmjs.com/package/path) - This is an exact copy of the NodeJS ’path’ module published to the NPM registry (V0.4.9 or greater)-->
-<!--* [yargs](https://www.npmjs.com/package/yargs) - Helps you build interactive command line tools, by parsing arguments and generating an user interface (V1.0.0 or greater)-->
-<!--* [node-html-parser](https://www.npmjs.com/package/node-html-parser) - Fast HTML Parser is a very fast HTML parser. Which will generate a simplified DOM tree, with basic element query support. (V1.1.0 or greater)-->
+slide2pdf uses a number of open source projects to work properly:
 * [NodeJS](https://github.com/nodejs) - Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine (V7.6.0 or greater)
 * [ImageMagick](https://doc.ubuntu-fr.org/imagemagick) 
 * All packages listed in package.json file 
-
-<!-- CONFIG FILE -> NAVIGATION : list of keyboard key accepted by puppeteer https://github.com/GoogleChrome/puppeteer/blob/master/lib/USKeyboardLayout.js -->

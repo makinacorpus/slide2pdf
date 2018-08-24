@@ -1,0 +1,4 @@
+TODO
+
+- Detect when to stop the app to prevent loop captures. Maybe by using MD5 to stop the app when it captures 5 identical slides in a row
+- Develop a feature to define page range to capture 

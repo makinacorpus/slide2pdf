@@ -5,7 +5,7 @@
         [".navigate-right.enabled", "ArrowRight"]
     ],
     "pictureQuality": 90,
-    "outputPath": "./datest3.pdf",
+    "outputPath": "./out.pdf",
     "verbose": true,
     "overwrite": true,
     "debug": false,
